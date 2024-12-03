@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba (0,0,0,0.2), rgba(0,0,0,0.5));
+    background-image: url("/9ea5e1d1cc54e9a6ad46d9b0bacb9596.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Caveat", cursive;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 100vh;
+}
+
+.weather-app{
+    background-color: rgba(255,255,255,0.2);
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(28, 163, 216);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+ 
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3rem;
+}
+
+.search-btn{
+    background-color: #3498db;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+background-color: #2980b9;
+}
+
+.city-date-section{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city{
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+.city-date-section .date{
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.temperature-info{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temperature-info .temp{
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.temperature-info .description i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span{
+    font-size: 1.5rem;
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: rgba(236, 240, 241, 0.5);
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
+
+.material-icons .humidity-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.additional-info .material-icons{
+    font-size: 2rem;
+    opacity: 0.8;
+   
+}
+.wind-info div,
+.humidity-info div,
+.visibility-info div{
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .weather-app {
+        padding: 20px;
+    }
+}
